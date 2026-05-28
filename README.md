@@ -21,11 +21,11 @@ Instead of just using existing libraries, I wanted to build some of these operat
 
 ---
 # **Tech Stack**
-C++17
-Python
-NumPy
-CMake
-Command line development
+- C++17
+- Python
+- NumPy
+- CMake
+- Command line development
 
 ---
 # **Features**
@@ -38,32 +38,15 @@ Command line development
 - Modular C++ project structure using CMake
 
 ---
-# **Project Structure**
-include/
-  matrix.hpp
-
-src/
-  main.cpp
-  matrix_cpu.cpp
-
-tests/
-  validate.py
-
-benchmarks/
-  results.md
-
-build/
-
----
 # **How to Build**
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make
+**mkdir build**
+**cd build**
+**cmake -DCMAKE_BUILD_TYPE=Release ..**
+**make**
 
 ---
 # **Run the Benchmark**
-./ai_benchmark
+**./ai_benchmark**
 
 EXAMPLE OUTPUT:
 AI Numeric Kernel Benchmark
@@ -80,7 +63,7 @@ Saved 128x128 outputs for NumPy validation.
 # **Validate Numerical Accuracy**
 From the project root:
 
-python3 tests/validate.py
+**python3 tests/validate.py**
 
 EXAMPLE VALIDATION OUTPUT:
 Floating-Point Accuracy Validation
