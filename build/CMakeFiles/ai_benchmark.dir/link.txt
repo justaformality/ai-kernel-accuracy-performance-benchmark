@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ai_benchmark.dir/src/main.cpp.o CMakeFiles/ai_benchmark.dir/src/matrix_cpu.cpp.o -o ai_benchmark
