@@ -39,14 +39,18 @@ Instead of just using existing libraries, I wanted to build some of these operat
 
 ---
 # **How to Build**
-**mkdir build**
-**cd build**
-**cmake -DCMAKE_BUILD_TYPE=Release ..**
-**make**
+```bash
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+```
 
 ---
 # **Run the Benchmark**
-**./ai_benchmark**
+```bash
+./ai_benchmark
+```
 
 EXAMPLE OUTPUT:
 AI Numeric Kernel Benchmark
@@ -63,11 +67,14 @@ Saved 128x128 outputs for NumPy validation.
 # **Validate Numerical Accuracy**
 From the project root:
 
-**python3 tests/validate.py**
+```bash
+python3 tests/validate.py
+```
 
 EXAMPLE VALIDATION OUTPUT:
+
 Floating-Point Accuracy Validation
-----------------------------------
+
 Matrix multiplication max absolute error: 0.00000763
 Matrix multiplication max relative error: 0.01291928
 ReLU max absolute error: 0.00000668
