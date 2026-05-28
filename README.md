@@ -1,4 +1,4 @@
-**AI KERNEL ACCURACY & PERFORMANCE BENCHMARK**
+# **AI KERNEL ACCURACY & PERFORMANCE BENCHMARK**
 This project is a small C++ benchmark framework I built to better understand how AI numerical operations work under the hood. It focuses on implementing core AI-style kernels from scratch, validating floating point accuracy, and benchmarking runtime performance.
 
 The project currently includes:
@@ -8,7 +8,8 @@ The project currently includes:
 - NumPy based validation
 - CPU runtime benchmarking
 
-**Why I Built This**
+---
+# **Why I Built This**
 A lot of AI frameworks rely heavily on optimized numerical kernels behind the scenes, especially operations like matrix multiplication and activation functions.
 
 Instead of just using existing libraries, I wanted to build some of these operations myself in C++ and understand:
@@ -18,14 +19,16 @@ Instead of just using existing libraries, I wanted to build some of these operat
 - how runtime changes with larger workloads
 - how AI-style kernels are structured internally
 
-**Tech Stack**
+---
+# **Tech Stack**
 C++17
 Python
 NumPy
 CMake
 Command line development
 
-**Features**
+---
+# **Features**
 - Matrix muliplication implemented from scratch in C++
 - ReLU activation kernel
 - Numerically stable softmax implementation
@@ -34,7 +37,8 @@ Command line development
 - Runtime benchmarking across different matrix sizes
 - Modular C++ project structure using CMake
 
-**Project Structure**
+---
+# **Project Structure**
 include/
   matrix.hpp
 
@@ -50,13 +54,15 @@ benchmarks/
 
 build/
 
-**How to Build**
+---
+# **How to Build**
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 
-**Run the Benchmark**
+---
+# **Run the Benchmark**
 ./ai_benchmark
 
 EXAMPLE OUTPUT:
@@ -70,7 +76,8 @@ Size: 512x512 | Runtime: 746.832 ms | Output elements: 262144
 
 Saved 128x128 outputs for NumPy validation.
 
-**Validate Numerical Accuracy**
+---
+# **Validate Numerical Accuracy**
 From the project root:
 
 python3 tests/validate.py
@@ -87,7 +94,8 @@ Softmax max relative error: 0.49994466
 
 Validation PASSED.
 
-**Benchmarking**
+---
+# **Benchmarking**
 The benchmark currently tests runtime performance for:
 - 64x64 matrices
 - 128x128 matrices
